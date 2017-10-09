@@ -3,8 +3,9 @@ jobs:
     build:
         working_directory: ~/tmp
         docker:
-          - image: circleci/node:7
-		steps:
-		  - checkout
-		  - run: mpm install
-		  - run: mpm test
+            - image: circleci/node:7
+        steps:
+            - checkout
+            - run: mpm install
+            - run: mpm test
+            
