@@ -31,7 +31,9 @@ jobs:
           - v1-dependencies-
 
       #- run: mvn dependency:go-offline
-
+       - run: npm install
+       - run: npm test
+       
       - save_cache:
           paths:
             - ~/.m2
