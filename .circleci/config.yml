@@ -6,6 +6,6 @@ jobs:
             - image: circleci/node:7
         steps:
             - checkout
-            - run: mpm install
-            - run: mpm test
+            - run: npm install
+            - run: npm test
             
