@@ -274,6 +274,12 @@
 					</dependency>
 				</dependencies>
 			</plugin> -->
+			<plugin>
+				<groupId>org.eclipse.mylyn.github</groupId>
+				<artifactId>github-parent</artifactId>
+				<version>3.1.0.201310021548-r</version>
+			</plugin>	
+			<!-- deflakinz customs before this line -->
 			
 			<!-- It signs the artifact for uploading to Maven Central -->
 			<plugin>
