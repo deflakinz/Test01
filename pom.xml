@@ -18,6 +18,13 @@
     </parent>
 	-->
 	
+	<!--deflakinz 2017.10.10 - group id add -->
+	<groupId>org.eclipse.mylyn.github</groupId>
+    <artifactId>github-parent</artifactId>
+    <version>3.1.0.201310021548-r</version>
+	<!--custom before this line -->
+	
+	<!--orig here -->
 	<groupId>uk.co.jemos.podam</groupId>
 	<artifactId>podam</artifactId>
 	<version>7.1.1-SNAPSHOT</version>
