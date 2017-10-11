@@ -8,8 +8,7 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-	
-	
+		
 	<!--deflaking 2017.10.10
 	<parent>
         <groupId>org.eclipse.mylyn.github</groupId>
@@ -18,7 +17,7 @@
     </parent>
 	-->
 	
-	<!--deflakinz 2017.10.10 - group id add -->
+	<!--deflakinz 2017.10.10 - group id add
 	<groupId>org.eclipse.mylyn.github</groupId>
     <artifactId>github-parent</artifactId>
     <version>3.1.0.201310021548-r</version>
