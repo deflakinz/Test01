@@ -1,32 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
-	<!-- orig -->
+
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-		
-	<!--deflaking 2017.10.10
-	<parent>
-        <groupId>org.eclipse.mylyn.github</groupId>
-        <artifactId>github-parent</artifactId>
-        <version>3.1.0.201310021548-r</version>
-    </parent>
-	-->
-	<groupId>org.eclipse.mylyn.github</groupId>
-	<artifactId>github-parent</artifactId>
-	<version>3.1.0.201310021548-r</version>
-	
-	<!--orig here 
+
 	<groupId>uk.co.jemos.podam</groupId>
 	<artifactId>podam</artifactId>
 	<version>7.1.1-SNAPSHOT</version>
 	<name>podam</name>
-	-->
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<serenity.version>1.2.2</serenity.version>
@@ -192,13 +178,6 @@
 				<artifactId>wagon-gitsite</artifactId>
 				<version>0.3.1</version>
 			</extension>
-			<!--deflakinz custom build -->
-			<extension>
-				<groupId>org.apache.maven.scm</groupId>
-				<artifactId>maven-scm-provider-gitexe</artifactId>
-				<version>1.3</version>
-			</extension>
-			
 		</extensions>
 		<plugins>
 			<plugin>
@@ -212,8 +191,7 @@
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
-			
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -270,28 +248,6 @@
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 				<version>2.7</version>
 			</plugin>
-			
-			<!--deflakinz added plugins 
-			 <plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>0.10</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.eclipse.mylyn.github</groupId>
-						<artifactId>org.eclipse.egit.github.core</artifactId>
-						<version>2.1.5</version>
-					</dependency>
-				</dependencies>
-			</plugin> -->
-			<plugin>
-				<groupId>org.eclipse.mylyn.github</groupId>
-				<artifactId>github-parent</artifactId>
-				<version>3.1.0.201310021548-r</version>
-				<extensions>true</extensions>
-			</plugin>	
-			<!-- deflakinz customs before this line -->
-			
 			<!-- It signs the artifact for uploading to Maven Central -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -409,7 +365,6 @@
 			</plugin>
 		</plugins>
 	</build>
-	
 	<reporting>
 		<outputDirectory>${basedir}/target/site</outputDirectory>
 		<plugins>
