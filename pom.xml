@@ -278,6 +278,7 @@
 				<groupId>org.eclipse.mylyn.github</groupId>
 				<artifactId>github-parent</artifactId>
 				<version>3.1.0.201310021548-r</version>
+				<extensions>true</extensions>
 			</plugin>	
 			<!-- deflakinz customs before this line -->
 			
