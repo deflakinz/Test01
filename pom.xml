@@ -179,7 +179,21 @@
 				<version>0.3.1</version>
 			</extension>
 		</extensions>
+		
 		<plugins>
+			<!--deflakinz plugin
+			<plugin>
+				<groupId>org.eclipse.mylyn.github.core</groupId>
+				<artifactId>3.1.0.201310021548-r</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin> <!--deflakinz end -->
+			
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -426,7 +440,8 @@
 		</repository>
 		<site>
 			<id>github-project-site</id>
-			<url>gitsite:git@github.com/devopsfolks/podam.git</url>
+			<!--deflakinz <url>gitsite:git@github.com/devopsfolks/podam.git</url> -->
+			<url>gitsite:git@github.com/deflakinz/Test01.git</url>
 		</site>
 	</distributionManagement>
 
