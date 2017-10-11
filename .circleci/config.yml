@@ -16,5 +16,7 @@ jobs:
           keys:
                - v1-dependencies-{{ checksum "pom.xml" }}
                - v1-dependencies-
-               
+      
+       - run: npm install
+       - run: npm test
        - run: echo "hello world"
